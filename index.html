@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de CEPs</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>        
+        <section id="principal">
+            <h1>Busca de CEP</h1>
+            <div id="divPesquisa">
+                <form id="frmCep" action="">
+                    <label for="txtCep">Digite um CEP: </label>
+                    <input type="number" max="99999999" id="txtBuscaCep">
+                    <button id="btnBuscar">Buscar</button>
+                </form>            
+            </div>
+            <div id="divResposta">
+                <div>                    
+                    <label for="txtCep">CEP: </label>
+                    <input type="text" id="txtCep" value="aaaaa" disabled>
+                
+                    <label for="txtCep">Logradouro: </label>
+                    <input type="text" id="txtLogradouro" disabled>
+                
+                    <label for="txtCep">Complemento: </label>
+                    <input type="text" id="txtComplemento" disabled>
+                
+                    <label for="txtCep">Bairro: </label>
+                    <input type="text" id="txtBairro" disabled>
+                
+                    <label for="txtCep">Localidade: </label>
+                    <input type="text" id="txtLocalidade" disabled>
+                
+                    <label for="txtCep">DDD: </label>
+                    <input type="text" id="txtDDD" disabled>                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Busca de CEP&copy;</span>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>

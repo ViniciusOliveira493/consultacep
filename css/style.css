@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 30px;
+}
+
+form{
+    width: 100%;
+}
+
+main{
+    margin-bottom: 10%;
+}
+
+#principal{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#principal > div{
+    display: inline-block;
+    width: 35vw;
+    background-color: aqua;
+    height: 50vh;
+    text-align: left;
+    padding: 1em;
+    overflow: auto;
+}
+
+#principal > div > div, form{
+    float: left;
+}
+
+#frmCep > button{
+    float: right;
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+}
+@media (max-width:500px) {
+    #principal{
+        width: 100%;
+    }
+
+    #principal > div{
+        width: 80%;
+        min-height: 10%;
+    }
+
+    #divPesquisa{
+        height: 10% !important;
+    }
+}
+
+@media (min-width:1000px) {
+    #principal{
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%,-50%);
+    }
+}
