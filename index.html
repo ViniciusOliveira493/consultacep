@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="esse site busca uma rua por cep e informa o nome,bairro,estado...">
     <title>Busca de CEPs</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -12,29 +13,29 @@
             <h1>Busca de CEP</h1>
             <div id="divPesquisa">
                 <form id="frmCep" action="">
-                    <label for="txtCep">Digite um CEP: </label>
-                    <input type="number" max="99999999" id="txtBuscaCep">
+                    <label for="txtBuscaCep">Digite um CEP (apenas números): </label>
+                    <input type="text" max="99999999" id="txtBuscaCep">
                     <button id="btnBuscar">Buscar</button>
                 </form>            
             </div>
             <div id="divResposta">
                 <div>                    
                     <label for="txtCep">CEP: </label>
-                    <input type="text" id="txtCep" value="aaaaa" disabled>
+                    <input type="text" id="txtCep" disabled>
                 
-                    <label for="txtCep">Logradouro: </label>
+                    <label for="txtLogradouro">Logradouro: </label>
                     <input type="text" id="txtLogradouro" disabled>
                 
-                    <label for="txtCep">Complemento: </label>
+                    <label for="txtComplemento">Complemento: </label>
                     <input type="text" id="txtComplemento" disabled>
                 
-                    <label for="txtCep">Bairro: </label>
+                    <label for="txtBairro">Bairro: </label>
                     <input type="text" id="txtBairro" disabled>
                 
-                    <label for="txtCep">Localidade: </label>
+                    <label for="txtLocalidade">Localidade: </label>
                     <input type="text" id="txtLocalidade" disabled>
                 
-                    <label for="txtCep">DDD: </label>
+                    <label for="txtDDD">DDD: </label>
                     <input type="text" id="txtDDD" disabled>                    
                 </div>
             </div>
@@ -43,6 +44,7 @@
     <footer>
         <span>Busca de CEP&copy;</span>
     </footer>
+
     <script src="./js/script.js"></script>
 </body>
 </html>

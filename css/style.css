@@ -1,33 +1,70 @@
+:root{
+
+    --hightlight:#66493D;
+    --white-transparente:rgba(255, 255, 255, 0.692);
+    --white:white;
+    --imgmapa:url("../img/bgimg.webp");
+}
+
 body{
     margin: 0;
     padding: 0;
+    background-image: var(--imgmapa);
+    background-repeat: repeat-y;
+    background-size: cover;
+    color: var(--white);
 }
 
+main{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+}
 input{
     width: 100%;
-    margin-bottom: 5px;
+    margin: 10px auto;
     height: 30px;
+    border: 2px solid var(--white);
+    background-color: var(--white-transparente);
+    border-radius: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+button{
+    border: 0;
+    margin: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--hightlight);
+    color: var(--white);
 }
 
 form{
     width: 100%;
 }
 
-main{
-    margin-bottom: 10%;
-}
-
 #principal{
     width: 90%;
     margin: auto;
+    padding-top: 5%;
     text-align: center;
-    font-size: 1.5em;
+}
+
+#principal h1{
+    font-size: 3em;
+    color: var(--white);
+    margin: 0;
 }
 
 #principal > div{
     display: inline-block;
     width: 35vw;
-    background-color: aqua;
     height: 50vh;
     text-align: left;
     padding: 1em;
@@ -36,6 +73,7 @@ main{
 
 #principal > div > div, form{
     float: left;
+    width: 98%;
 }
 
 #frmCep > button{
@@ -43,14 +81,16 @@ main{
 }
 
 footer{
-    color: white;
+    color: var(--white);
     background-color: black;
+    font-weight: bold;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     padding: 1em;
 }
+
 @media (max-width:500px) {
     #principal{
         width: 100%;
